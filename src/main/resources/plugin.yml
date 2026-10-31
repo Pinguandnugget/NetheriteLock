@@ -1,0 +1,14 @@
+name: NetheriteLock
+version: 1.0.0
+main: com.potitosafio.netheritelock.NetheriteLock
+api-version: '1.21'
+description: Bloqueo temporal de mejoras de diamante a netherite.
+commands:
+  netheritelock:
+    description: Control de mejoras a Netherite.
+    usage: /netheritelock <bloquear|desbloquear|estado>
+    permission: netheritelock.admin
+permissions:
+  netheritelock.admin:
+    description: Permite controlar NetheriteLock.
+    default: op
