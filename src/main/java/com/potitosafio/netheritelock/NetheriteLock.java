@@ -30,9 +30,9 @@ public final class NetheriteLock extends JavaPlugin implements Listener {
     }
 
     private boolean isUpgrade(SmithingInventory inv) {
-        ItemStack base = inv.getInputEquipment();
-        ItemStack addition = inv.getInputMineral();
-        ItemStack template = inv.getInputTemplate();
+        ItemStack base = inv.getItem(1);
+        ItemStack addition = inv.getItem(2);
+        ItemStack template = inv.getItem(0);
         if (base == null || addition == null || template == null) return false;
         return template.getType() == Material.NETHERITE_UPGRADE_SMITHING_TEMPLATE
             && addition.getType() == Material.NETHERITE_INGOT
